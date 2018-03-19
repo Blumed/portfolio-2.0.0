@@ -1,0 +1,9 @@
+//Colors
+$primary-color: #268bd2;
+$secondary-color: #202020;
+
+@import './helper';
+@import './partials/tabs.scss';
+// @import 'partials/btn.scss';
+@import 'partials/form.scss';
+@import '../../components/sidebar/sidebar';
