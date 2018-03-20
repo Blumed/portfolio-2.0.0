@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
+    title: 'Web Developer · Cullan Luther',
+    author: 'Cullan Luther',
     description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    siteUrl: 'https://cullanluther.com',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
@@ -50,7 +50,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          
+          {
+    resolve: `gatsby-plugin-sitemap`
+  },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants'

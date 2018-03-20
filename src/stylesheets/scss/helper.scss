@@ -6,3 +6,140 @@
     clear: both;
     height: 0;
 }
+.-inline>li {
+    display: inline-block;
+    margin-right: .2rem;
+}
+
+//Vertically Center
+.-vertical-center {
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+//Nicely Split
+.-split {
+    width: 48%;
+    float: left;
+    &:not(:last-child) {
+        margin-right: 2%;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+//Expand on Mobile
+@include mobile {
+    .-m-break {
+        width: 100% !important;
+        display: block;
+    }
+}
+
+//Hide
+.hidden {
+    visibility: hidden;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-full-width {
+    width: 100%;
+}
+
+.is-half-centered {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.is-hard {
+    border-radius: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+//Activate
+.is-active {
+    display: block !important;
+}
+
+//List Styles
+//-------------------------------------
+// No List Style
+.styless > li {
+    list-style: none;
+}
+
+//Inline List
+.-inline > li {
+    display: inline-block;
+    margin-right: .2rem;
+}
+
+//No Padding 
+.-paddingless {
+    padding: 0;
+}
+
+//Floats
+//@extend .float-l or @extend .float-r
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+//Floating Label
+.floating-label {
+    font-size: .5rem;
+    top: 0rem !important;
+    + *{
+        //padding: 1.1rem .5rem;
+    }
+}
+
+//IE
+.is-ie {
+    display: none;
+}
+
+.lte-ie9-hidden {
+    display: none;
+}
+.ieEdge-hidden {
+    display: none;
+}
+.is-ieEdge .is-ieEdge-hide {
+    display: none;
+}
+.is-ieEdge .is-ieEdge-show {
+    display: block !important;
+}
+.ie9lte .ie9lte-show {
+    display: block !important;
+}
+//IE 10 and 11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   //IE10+ specific styles go here
+   .is-ie10plus .is-ie {
+       display: block !important;
+   }
+   .is-ie-hidden {
+       display: none !important;
+   }
+}
+.is-hidden {
+    display: none;
+}

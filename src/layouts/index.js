@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
-import Sidebar from "../components/sidebar/Sidebar"
+import Sidebar from "../components/sidebar"
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -58,27 +58,30 @@ class Template extends React.Component {
       )
     }
     return (
-      <Container
+<div>
+          <input type="checkbox" className="sidebar-checkbox" id="sidebar-checkbox" />
+          <Sidebar />
+                <Container
       
         style={{
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
+        className="wrap"
       >  
-          <input type="checkbox" className="sidebar-checkbox" id="sidebar-checkbox" />
-          <Sidebar />
           <div
-            className="wrap"
+            
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
+            {header}
+        {children()}
+          </Container>
           <label htmlFor="sidebar-checkbox" className="sidebar-toggle triangle slide-down" title="menu"><i className="fa fa-circle-thin grow-in"></i></label>
           {this.props.postBodyComponents}
           <script src="https://use.fontawesome.com/93eb216ac8.js"></script>
         
-        {header}
-        {children()}
-      </Container>
+      </div>
     )
   }
 }

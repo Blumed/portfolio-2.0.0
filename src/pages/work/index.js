@@ -3,8 +3,19 @@ import Link from "gatsby-link"
 import get from "lodash/get"
 import Helmet from "react-helmet"
 
+//Tell Webpack Where images are
+import caribou from "./images/caribou/caribou_logo.jpg"
+import tyson from "./images/photo-gallery/tyson-crockett-photography.jpg"
+import looksee from "./images/looksee/looksee-css-border-debugging-chrome-extension.png"
+import celadon from "./images/celadon/celadon.jpg"
+import rubbermaid from "./images/rubbermaid/rubbermaid.jpg"
+import levolor from "./images/levolor/levolor.jpg"
+import sleepnumber from "./images/sleepnumber/sleepnumber.jpg"
+import deviceinfo from "./images/deviceinfo/deviceinfo-logo.png"
+import notetaker from "./images/notetaker/notetaker.jpg"
+
+
 import {rhythm} from "../../utils/typography"
-import '../../stylesheets/scss/config.scss';
 
 class Work extends React.Component {
     render() {
@@ -22,7 +33,7 @@ class Work extends React.Component {
                 </nav>
                 <section className="work is-site">
                     <a href="https://www.caribouperks.com/">
-                        <img className="is-full-width is-hard" src="/assets/images/work/caribou/caribou_logo.jpg" alt="Caribou Perks Website" />
+                        <img className="is-full-width is-hard" src={caribou} alt="Caribou Perks Website" />
                     </a>
                     <h2><a href="https://www.caribouperks.com/">Caribou Perks</a></h2>
                     <p>My first project with Horizontal Integration. Caribou is often changing their look and feel. We had an awesome oportunity to updated their perks section. My first time using HI's Hive build system, which was really fun and powerful. Go over and peep the web app we made. Proud of how well this project turned out.</p>
@@ -43,7 +54,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-site">
                     <a href="https://tysoncrockett.com">
-                        <img className="is-full-width is-hard" src="/assets/images/work/photo-gallery/tyson-crockett-photography.jpg" alt="Celadon Wealth Responsive Website" />
+                        <img className="is-full-width is-hard" src={tyson} alt="Celadon Wealth Responsive Website" />
                     </a>
                     <div className="text-body">
                         <h2><a href="https://tysoncrockett.com">Tyson Crockett Photographer</a></h2>
@@ -62,7 +73,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-project">
                     <a rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/looksee/mbfdhnjobheppodaolenppfegicnhmhp">
-                        <img className="is-full-width is-hard" src="/assets/images/work/looksee/looksee-css-border-debugging-chrome-extension.png" alt="Looksee Chrome Extension for debugging css using borders on the fly" />
+                        <img className="is-full-width is-hard" src={looksee} alt="Looksee Chrome Extension for debugging css using borders on the fly" />
                     </a>
                     <div className="text-body">
                         <h2><a rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/looksee/mbfdhnjobheppodaolenppfegicnhmhp">Looksee</a></h2>
@@ -80,7 +91,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-site">
                     <a href="http://www.celadonwealth.com/">
-                        <img className="is-full-width is-hard" src="/assets/images/work/celadon/celadon.jpg" alt="Celadon Wealth Responsive Website" />
+                        <img className="is-full-width is-hard" src={celadon} alt="Celadon Wealth Responsive Website" />
                     </a>
                     <div className="text-body">
                         <h2><a href="http://www.celadonwealth.com/">Celadon Managed Wealth</a></h2>
@@ -99,7 +110,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-site">
                     <a href="http://newell.hellomoon.net/">
-                        <img className="is-full-width is-hard" src="/assets/images/work/rubbermaid/rubbermaid.jpg" alt="Newell Rubbermaid Animated Responsive Website" />
+                        <img className="is-full-width is-hard" src={rubbermaid} alt="Newell Rubbermaid Animated Responsive Website" />
                     </a>
                     <div className="text-body">
                         <h2><a href="http://newell.hellomoon.net/">Newell Rubbermaid</a></h2>
@@ -120,7 +131,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-site">
                     <a href="http://www.levolor.com/">
-                        <img className="is-full-width is-hard" src="/assets/images/work/levolor/levolor.jpg" alt="levolor blinds ecommerce responsive website" />
+                        <img className="is-full-width is-hard" src={levolor} alt="levolor blinds ecommerce responsive website" />
                     </a>
                     <div className="text-body">
                         <h2><a href="http://www.levolor.com/">Levolor</a></h2>
@@ -140,7 +151,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-site">
                         <a href="http://www.sleepnumber.com/">
-                            <img className="is-full-width is-hard" src="/assets/images/work/sleepnumber/sleepnumber.jpg" alt="sleepnumber beds ecommerce responsive website" />
+                            <img className="is-full-width is-hard" src={sleepnumber} alt="sleepnumber beds ecommerce responsive website" />
                         </a>
                     <div className="text-body">
                         <h2><a href="http://www.sleepnumber.com/">Sleep Number</a></h2>
@@ -162,7 +173,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-project">
                     <a href="https://deviceinfo.io/">
-                        <img className="is-full-width is-hard" src="/assets/images/work/deviceinfo/deviceinfo-logo.png" alt="sublime text plugin for impex files" /></a>
+                        <img className="is-full-width is-hard" src={deviceinfo} alt="sublime text plugin for impex files" /></a>
                     <div className="text-body">
                         <h2><a href="https://deviceinfo.io/">Device Info IO</a></h2>
                         <p>Device Info IO are a few tools I created to help fellow web developers and clients communicate about devices for accurete bug tracking</p>
@@ -174,7 +185,7 @@ class Work extends React.Component {
                 </section>
                 <section className="work is-project">
                     <a href="/project/note-taker">
-                        <img className="is-full-width is-hard" src="/assets/images/work/notetaker/notetaker.jpg" alt="simple note taker" />
+                        <img className="is-full-width is-hard" src={notetaker} alt="simple note taker" />
                     </a>
                     <div className="text-body">
                         <h2><a href="/project/note-taker">Simple Note Taker</a></h2>

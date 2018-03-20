@@ -36,7 +36,7 @@ class Contact extends React.Component {
             </div> 
              <input name="_gotcha" style={{display: "none"}} />
              <input type="submit" value="Send" />
-            <input type="hidden" name="_next" value="/thanks" /> 
+            <input type="hidden" name="_next" value="/" /> 
           </form>
         </section>
       </div>
