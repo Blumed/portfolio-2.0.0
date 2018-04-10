@@ -2,7 +2,6 @@ import React, { Component } from "react"
 
 
 
-
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {

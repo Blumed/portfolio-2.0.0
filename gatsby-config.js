@@ -7,6 +7,9 @@ module.exports = {
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
+    `gatsby-link`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,8 +17,6 @@ module.exports = {
         name: 'pages',
       },
     },
-    `gatsby-link`,
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
@@ -69,7 +70,6 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {

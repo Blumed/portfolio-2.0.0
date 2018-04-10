@@ -4,19 +4,28 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 
 import {rhythm} from "../../utils/typography"
-import '../../stylesheets/scss/config.scss';
+import Instafeed from "react-instafeed"
+import { Timeline } from "react-twitter-widgets"
+import LastFM from "../../utils/lastFM"
+import "../../stylesheets/scss/config.scss"
 
 class About extends React.Component {
     render() {
         // console.log("props", this.props)
         const pageLinks = []
         const siteTitle = get(this, "props.data.site.siteMetadata.title")
+        const instafeedTarget = 'instafeed'
 
         return (
             <div className="clear">
-                <Helmet title={get(this, "props.data.site.siteMetadata.title")}/>
+                <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                 <div className="-hidden-wrap" style={{ overflow: "hidden" }}>
-                    <figure className="me-yo" style={{ visibility: "hidden" }} id="selfie">
+                    <figure className="me-yo"  id="selfie" style={{
+                        width: "100%",
+                        display: "block",
+                        borderRadius: "0",
+                    clipPath: "polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)"
+                                    }}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             version="1.1"
@@ -517,15 +526,40 @@ class About extends React.Component {
                     <h3>Music</h3>
                     <div className="music-list">
                         <div id="row-one"></div>
+                        <LastFM />
                     </div>
                     {/* <!-- <ol className="list" id="listTopArtists"></ol> --> */}
                 </section>
                 <section>
                     <h3>Instagram</h3>
                     <div id="instafeed" className="-instagram clear"></div>
+                         <Instafeed
+        limit='8'
+        ref='instafeed'
+        resolution='standard_resolution'
+        sortBy='most-recent'
+        target={instafeedTarget}
+        template='<a href="{{link}}"><img class="img-grow" src="{{image}}" /></a>'
+        userId='32649960'
+        clientId='copcircles'
+        accessToken='32649960.52a6938.c901358281534e5c8cb3f4712ef284c4'
+      />
                 </section>
                 <section>
-                    {/* <h3>Twitter</h3> {% include twitter.html %} */}
+                    <h3>Twitter</h3>
+                  <Timeline
+    dataSource={{
+      sourceType: 'profile',
+      screenName: 'CullanLuther'
+    }}
+    options={{
+      username: 'CullanLuther',
+      height: '400'
+    }}
+    onLoad={() => console.log('Timeline is loaded!')}
+  />
+                        
+                   
                 </section>
             </div>
         )
