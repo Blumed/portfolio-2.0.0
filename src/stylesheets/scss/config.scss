@@ -1,11 +1,30 @@
-//Colors
+//- Colors
+
 $primary-color: #268bd2;
 $secondary-color: #202020;
+
+//- Font
+
+@import url("//hello.myfonts.net/count/2e61ea");
+@font-face {
+    font-family: 'BrandonText';
+    src: url('../../utils/fonts/2E61EA_0_0.eot');
+    src: url('../../utils/fonts/2E61EA_0_0.eot?#iefix') format('embedded-opentype'),
+     url('../../utils/fonts/2E61EA_0_0.woff') format('woff'),
+      url('../../utils/fonts/2E61EA_0_0.woff2') format('woff2'),
+     url('../../utils/fonts/2E61EA_0_0.ttf') format('truetype');
+}
+:root body {
+    font-family: 'Brandon Text', "Helvetica", sans-serif;
+}
+
+//- Files
 
 @import 'partials/mixins';
 @import 'helper'; 
 
 @import 'partials/btn';
 @import 'partials/form'; 
+@import 'partials/instafeed';
 @import '../../components/sidebar/sidebar';
 @import '../../components/Tabs/tabs';

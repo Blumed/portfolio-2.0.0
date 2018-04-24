@@ -62,9 +62,9 @@ class Sidebar extends React.Component {
                             padding: "0.8rem 1rem",
                             position: "relative",
                         }}
-                        to={"/about/"}
+                        to={"/blog/"}
                         >
-                        About<i className="fa fa-circle-thin"></i><i className="fa fa-circle"></i>
+                        Blog<i className="fa fa-circle-thin"></i><i className="fa fa-circle"></i>
                     </Link>
                     <Link
                         className="sidebar-nav-item"    
@@ -107,7 +107,7 @@ class Sidebar extends React.Component {
                                 boxShadow: "none",
                                 color: "white"
                             }}
-                            href="twitter">
+                            href="https://twitter.com/cullanluther">
                             <i className="fa fa-twitter"></i>
                         </a>
                         <a

@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === `production`) {
 module.exports = class HTML extends React.Component {
   render() {
     let css
-    if (process.env.NODE_ENV === `production`) {
+    if (process.env.NODE_ENV === `build`) {
       css = (
         <style
           id="gatsby-inlined-css"
