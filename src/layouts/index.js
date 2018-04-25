@@ -5,14 +5,14 @@ import Sidebar from "../components/sidebar"
 
 import { rhythm, scale } from '../utils/typography'
 import "../stylesheets/scss/config.scss"
-let stylesStr
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
-  }
-}
+// let stylesStr
+// if (process.env.NODE_ENV === `production`) {
+//   try {
+//     stylesStr = require(`!raw-loader!../public/styles.css`)
+//   } catch (e) {
+//     console.log(e)
+//   }
+// }
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -22,15 +22,15 @@ class Template extends React.Component {
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
       rootPath = __PATH_PREFIX__ + `/`
     }
-    let css
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      )
-    }
+    // let css
+    // if (process.env.NODE_ENV === `production`) {
+    //   css = (
+    //     <style
+    //       id="gatsby-inlined-css"
+    //       dangerouslySetInnerHTML={{ __html: stylesStr }}
+    //     />
+    //   )
+    // }
     if (location.pathname === rootPath) {
       header = (
         <h1
