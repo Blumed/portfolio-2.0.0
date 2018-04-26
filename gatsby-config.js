@@ -5,7 +5,6 @@ module.exports = {
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://cullanluther.com',
   },
-  pathPrefix: '/',
   plugins: [
     `gatsby-link`,
     `gatsby-plugin-react-helmet`,

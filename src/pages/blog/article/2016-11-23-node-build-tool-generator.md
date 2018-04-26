@@ -10,7 +10,7 @@ image: cullanluther-nodejs-icon-card
 At work we use a custom, static site build system. Ingredients include the latest and greatest of front-end buzz words. We needed an easy way to launch it quickly so I volunteered.
 
 <!--more-->
-<img class="is-full-width" src="/assets/images/article/cullanluther-nodejs-icon-card.svg">
+<img class="is-full-width" src="/images/cullanluther-nodejs-icon-card.svg">
 Projects can move fast so the team needs a tool that is both quick and nimble. We use a highly customized build system that is both flexible and solid. So, the need to launch our build tool for both ease of use and speed is important.
 
 ##Bash

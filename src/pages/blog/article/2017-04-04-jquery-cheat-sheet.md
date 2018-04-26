@@ -21,6 +21,6 @@ I don't often get requests for contributing content from you beautiful people. T
 
 <p>
     <a href="https://websitesetup.org/jquery-cheat-sheet/" target="_blank">
-        <img class="jquery-cheats -m-break" src="/assets/images/article/Jquery-Cheat-Sheet-WSU.png" alt="jQuery Cheat Sheet" />
+        <img class="jquery-cheats -m-break" src="/images/Jquery-Cheat-Sheet-WSU.png" alt="jQuery Cheat Sheet" />
     </a>
 </p>

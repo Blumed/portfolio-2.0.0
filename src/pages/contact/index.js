@@ -26,11 +26,11 @@ class Contact extends React.Component {
               <div className="grouped-field">
                 <label htmlFor="frmName">
                   Full Name</label>
-                <input className="-m-break" id="frmName" name="name" defaultValue="name" required="" ref={(input) => { this.nameInput = input; }} autoComplete="name" />
+                <input className="-m-break" id="frmName" name="name" required="" ref={(input) => { this.nameInput = input; }}  autoComplete="name" />
               </div>
               <div className="grouped-field">
                 <label htmlFor="frmEmail">Email</label>
-                <input className="-m-break" type="email" id="frmEmail" name="_replyto" ref={(input) => { this.nameInput = input; }} required="" autoComplete="email" />
+                <input className="-m-break" type="email" id="frmEmail" name="_replyto" ref={(input) => { this.emailInput = input; }} autoComplete="email" />
               </div>
               <input type="hidden" name="_subject" value="New Blog Submission!" />
               <div className="grouped-field"><label htmlFor="frmMessage">Message</label>

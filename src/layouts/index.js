@@ -35,43 +35,31 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
+            fontWeight: 100,
+            letterSpacing: '.125rem',
+            textTransform: 'uppercase',
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Gatsby Starter Blog
-          </Link>
+
         </h1>
       )
     } else {
       header = (
-        <h3
+        <h1
           style={{
-            fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
+            fontWeight: 100,
+            letterSpacing: '.125rem',
+            textTransform: 'uppercase',
             marginBottom: rhythm(-1),
           }}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Gatsby Starter Blog
-          </Link>
-        </h3>
+
+            {this.props.location.pathname.slice(1, -1)}
+         
+        </h1>
       )
     }
     return (

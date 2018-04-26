@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="700px" viewBox="0 0 1400 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #2A2A2A;">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>nodejs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="8" width="1381" height="665"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1381" height="665" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="9.35478408" y="0" width="1362.29043" height="681"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1362.29043" height="681" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nodejs">
+            <g id="n" transform="translate(489.000000, 130.000000)" stroke="#FFFFFF">
+                <polyline id="Path-2" points="211.420824 0.785387424 206.022923 3.75761388 0.110086344 122.162816 0 439.842649 143.956243 364.161957 145.046097 210.529124 211.420824 168.476141"></polyline>
+                <polyline id="Path-2" transform="translate(316.710412, 220.528631) scale(-1, 1) translate(-316.710412, -220.528631) " points="422.420824 1 417.022923 3.97222645 211.110086 122.377429 211 440.057261 354.956243 364.376569 356.046097 210.743737 422.420824 168.690754"></polyline>
+            </g>
+            <g id="cube" transform="translate(633.000000, 298.000000)">
+                <path d="M66.1728516,0.887207031 L0.0561523438,43.1123047" id="Path-5" stroke="#979797"></path>
+                <path d="M132.116699,1 L66,43.2250977" id="Path-5" stroke="#979797" transform="translate(99.058350, 22.112549) scale(-1, 1) translate(-99.058350, -22.112549) "></path>
+                <path d="M66.1166992,105 L0,147.225098" id="Path-5" stroke="#979797" transform="translate(33.058350, 126.112549) scale(1, -1) translate(-33.058350, -126.112549) "></path>
+                <path d="M132.116699,105 L66,147.225098" id="Path-5" stroke="#979797" transform="translate(99.058350, 126.112549) scale(-1, -1) translate(-99.058350, -126.112549) "></path>
+                <polygon id="Path-6" stroke="#FFFFFF" fill="#85CB39" points="66.0161133 1.19921875 0.249511719 43.2749023 0.00244140625 104.759766 66.0800781 147.25 133.144043 104.31543 133.104004 43.2270508"></polygon>
+            </g>
+            <g id="border" transform="translate(10.000000, 10.000000)" stroke="#FFFFFF" stroke-width="2">
+                <use id="Rectangle" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                <use id="Rectangle" mask="url(#mask-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

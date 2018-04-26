@@ -15,7 +15,7 @@ Currently, I am learning unix at work, so what better way to learn something tha
 
 To start off this is my directory structure.
 
-<img src="/assets/images/article/file-structure.png" class="is-full-width"/>
+<img src="/images/file-structure.png" class="is-full-width"/>
 
 You can modify my script any way you want, but just so you have a clear view of where to begin.
 
